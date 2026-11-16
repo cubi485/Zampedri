@@ -1,0 +1,324 @@
+body {
+    background-color: #121212;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+.navbar {
+    background-color: #121212;
+    border-bottom: 4px solid #c00000;
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    font-family: "Days One", sans-serif;
+    font-size: 30px;
+}
+
+.navbar-brand img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-family: "Days One", sans-serif;
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.menu a:hover {
+    color: #e10600;
+}
+
+.titulo {
+    width: fit-content;
+    margin: 30px auto;
+    padding: 10px 60px;
+    background-color: #222;
+    clip-path: polygon(8% 0, 100% 0, 92% 100%, 0 100%);
+    font-family: "Days One", sans-serif;
+}
+
+.boton-centro {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.boton {
+    display: inline-block;
+    background-color: #e10600;
+    color: white;
+    font-family: "Days One", sans-serif;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.boton:hover {
+    background-color: #ff2a24;
+    color: white;
+}
+
+.principal {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+
+.principal .contenido {
+    flex: 1 1 350px;
+}
+
+.principal .titulo {
+    margin-left: 0;
+    font-size: 28px;
+}
+
+.logo {
+    clip-path: circle(45%);
+}
+
+.imagen-principal {
+    flex: 1 1 300px;
+    background-color: #222;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.imagen-principal img {
+    display: block;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.principal .boton-centro {
+    flex: 1 1 100%;
+}
+
+.servicios-prin {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.servicio {
+    background-color: #222;
+    border-radius: 25px;
+    padding: 20px;
+    text-align: center;
+}
+
+.servicio-ancho {
+    grid-column: 1 / 3;
+}
+
+.servicio h3 {
+    font-family: "Days One", sans-serif;
+    font-size: 22px;
+}
+
+.servicio-fotos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.servicio-fotos img {
+    width: 45%;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.servicio-motor {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.servicio-motor p {
+    flex: 1;
+    margin: 0;
+}
+
+.servicio-motor img {
+    flex: 1;
+    max-width: 50%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.productos-prin {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.producto {
+    position: relative;
+    height: 180px;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    overflow: hidden;
+    color: black;
+}
+
+.producto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.producto-nombre {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
+    padding: 2px 6px;
+    font-size: 13px;
+}
+
+.producto-precio {
+    position: absolute;
+    bottom: 6px;
+    right: 6px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    border-radius: 8px;
+    padding: 2px 8px;
+}
+
+.carrusel {
+    margin-top: 30px;
+}
+
+.carrusel .carousel {
+    max-width: 900px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    border: 3px solid #c00000;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.carrusel .carousel-indicators {
+    z-index: 3;
+}
+
+.carrusel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: #e10600;
+}
+
+.carrusel .carousel-item img {
+    max-height: 450px;
+    object-fit: cover;
+}
+
+.aviso {
+    text-align: center;
+    color: #aaa;
+}
+
+.formulario {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.formulario label {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.turnos .alert {
+    max-width: 500px;
+    margin: 0 auto 20px auto;
+}
+
+.contacto {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.contacto iframe {
+    width: 100%;
+    max-width: 700px;
+    height: 300px;
+    border: 0;
+    border-radius: 15px;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 25px 20px;
+    background-color: black;
+    border-top: 4px solid #c00000;
+    text-align: center;
+}
+
+.redes a {
+    color: white;
+    margin: 0 12px;
+    font-size: 28px;
+}
+
+.redes a:hover {
+    color: #e10600;
+}
+
+/* tablet */
+@media (max-width: 992px) {
+    .productos-prin {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* celular */
+@media (max-width: 700px) {
+    .servicios-prin {
+        grid-template-columns: 1fr;
+    }
+
+    .servicio-ancho {
+        grid-column: auto;
+    }
+
+    .servicio-motor {
+        flex-direction: column;
+    }
+
+    .servicio-motor img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .productos-prin {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .menu a {
+        margin-left: 10px;
+        font-size: 13px;
+    }
+}

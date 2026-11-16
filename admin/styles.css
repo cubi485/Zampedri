@@ -1,0 +1,52 @@
+.login {
+    max-width: 400px;
+    margin-top: 100px;
+}
+
+.campos {
+    display: grid;
+    gap: 8px;
+}
+
+.campos-agregar {
+    grid-template-columns: 5fr 2fr 3fr 2fr;
+}
+
+.campos-editar {
+    grid-template-columns: 4fr 2fr 3fr 3fr;
+}
+
+.campos .btn {
+    justify-self: start;
+}
+
+.acciones {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    gap: 8px;
+}
+
+.tabla {
+    overflow-x: auto;
+}
+
+/* tablet */
+@media (max-width: 992px) {
+    .campos-agregar,
+    .campos-editar {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .campos .form-control:first-child {
+        grid-column: 1 / -1;
+    }
+}
+
+/* celular */
+@media (max-width: 700px) {
+    .campos-agregar,
+    .campos-editar {
+        grid-template-columns: 1fr;
+    }
+}
